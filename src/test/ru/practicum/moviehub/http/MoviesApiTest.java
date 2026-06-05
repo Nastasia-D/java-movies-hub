@@ -46,7 +46,7 @@ public class MoviesApiTest {
 
     @AfterAll
     static void afterAll() {
-        if(server != null) {
+        if (server != null) {
             server.stop();
         }
     }
