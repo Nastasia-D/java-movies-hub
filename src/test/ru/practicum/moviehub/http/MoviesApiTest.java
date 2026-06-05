@@ -1,23 +1,9 @@
 package ru.practicum.moviehub.http;
 
-import com.google.gson.Gson;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.practicum.moviehub.model.Movie;
-import ru.practicum.moviehub.store.MoviesStore;
-
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.nio.charset.StandardCharsets;
-import java.time.Duration;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MoviesApiTest {
 
@@ -40,7 +26,7 @@ public class MoviesApiTest {
 
     @BeforeEach
     void beforeEach() {
-        store.clear();
+
     }
 
     @AfterAll
