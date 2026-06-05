@@ -22,6 +22,7 @@ public class MoviesServer {
             throw new RuntimeException("Не удалось создать HTTP-сервер", e);
         }
     }
+
     public void start() {
         server.start();
         System.out.println("Сервер запущен");
