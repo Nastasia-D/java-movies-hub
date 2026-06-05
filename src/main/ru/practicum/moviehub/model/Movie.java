@@ -1,7 +1,5 @@
 package ru.practicum.moviehub.model;
 
-import java.util.List;
-
 public class Movie {
 
     private Integer id;
