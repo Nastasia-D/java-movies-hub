@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MoviesStore {
     private final Map<Integer, Movie> movies = new HashMap<>();
@@ -37,7 +38,12 @@ public class MoviesStore {
     }
 
     public Optional<Movie> findById(Integer id) {
-
         return Optional.ofNullable(movies.get(id));
+    }
+
+    public List<Movie> findByYear(int year) {
+        return findAll().stream()
+                .filter(movie -> movie.getYear() == year)
+                .collect(Collectors.toList());
     }
 }
